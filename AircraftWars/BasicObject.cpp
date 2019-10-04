@@ -176,3 +176,4 @@ void Actor::SetImage(ACL_Image &image) {
 void Actor::MoveSelf() {
 	position.SetPoint(position + speed);
 }
+

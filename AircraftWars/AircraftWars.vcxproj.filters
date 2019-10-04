@@ -24,6 +24,9 @@
     <ClCompile Include="MainGame.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="acllib.h">
