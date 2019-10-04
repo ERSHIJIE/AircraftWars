@@ -118,6 +118,7 @@
     <ClCompile Include="acllib.c" />
     <ClCompile Include="BasicObject.cpp" />
     <ClCompile Include="MainGame.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="acllib.h" />
