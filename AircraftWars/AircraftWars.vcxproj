@@ -123,6 +123,7 @@
   <ItemGroup>
     <ClInclude Include="acllib.h" />
     <ClInclude Include="BasicObject.h" />
+    <ClInclude Include="ResourceManager.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="AircraftBackground.jpg" />
