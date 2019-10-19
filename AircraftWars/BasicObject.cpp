@@ -125,12 +125,14 @@ int Actor::GetWidth() const {
 }
 void Actor::SetWidth(int width) {
 	this->width = width;
+	this->rect.SetRight(this->rect.GetLeft() + this->GetWidth());
 }
 int Actor::GetHeight() const {
 	return this->height;
 }
-void Actor::SetHeight(const int height) {
+void Actor::SetHeight(int height) {
 	this->height = height;
+	this->rect.SetBottom(this->rect.GetTop() + this->GetHeight());
 }
 int Actor::GetHealthPoint() const {
 	return this->healthPoint;
@@ -150,6 +152,8 @@ const Point &Actor::GetPosition() const {
 }
 void Actor::SetPosition(const Point &position) {
 	this->position.SetPoint(position);
+	this->rect.SetRect(this->position.GetX(), this->position.GetX() + this->GetWidth(),
+		this->position.GetY(), this->position.GetY() + this->GetHeight());
 }
 const Speed &Actor::GetSpeed() const {
 	return this->speed;
@@ -159,9 +163,6 @@ void Actor::SetSpeed(const Speed &speed) {
 }
 const Rect &Actor::GetRect() const {
 	return this->rect;
-}
-void Actor::SetRect(const Rect &rect) {
-	this->rect.SetRect(rect);
 }
 const ACL_Image &Actor::GetImage() const {
 	return this->image;

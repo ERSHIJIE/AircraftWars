@@ -77,7 +77,6 @@ public:
 	const Speed &GetSpeed() const;
 	void SetSpeed(const Speed &speed);
 	const Rect &GetRect() const;
-	void SetRect(const Rect &rect);
 	const ACL_Image &GetImage() const;
 	ACL_Image *GetImagePointer();
 	void SetImage(ACL_Image &image);
